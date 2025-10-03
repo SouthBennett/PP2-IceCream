@@ -1,0 +1,113 @@
+/* Global box-sizing and font */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets font globally */
+  background-color: #f5f5f5; /* Light gray background */
+  display: flex; /* Center container horizontally */
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Container holding form and image */
+.container {
+  display: flex;
+  align-items: flex-start; /* Align top of form and image */
+  gap: 20px; /* Space between form and image */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+/* Form styling */
+form {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form title */
+h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;       /* Stack above input */
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Inputs, selects, textareas */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Fieldset sections */
+fieldset {
+  border: 2px solid green;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Legend styling */
+legend {
+  font-weight: bold;
+  color: green;
+  padding: 0 10px;
+}
+
+/* Horizontal radio/checkbox options */
+.options {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0;
+  flex-wrap: wrap; 
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Submit button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Image next to form */
+img {
+  max-width: 150px; /* limit width */
+  height: auto;
+  align-self: center; /* vertically center relative to form */
+}
