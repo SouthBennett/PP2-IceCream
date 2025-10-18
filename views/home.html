@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/public/styles.css" />
     <!-- Favicon -->
-    <link rel="icon" href="images/smiley-icecream.jpg">
+    <link rel="icon" href="images/smiley-icecream.jpg" />
     <title>Ice Cream Order Form</title>
   </head>
   <body>
@@ -34,7 +34,7 @@
             <option>Strawberry</option>
             <option>Mint</option>
           </select>
-          
+
           <!-- Choose Your Cone -->
           <label>Choose your cone:</label>
           <div class="options">
@@ -49,26 +49,35 @@
           <!-- Toppings -->
           <label>Toppings:</label>
           <div class="options">
-            <input type="checkbox" id="sprinkles" name="toppings" value="Sprinkles" />
+            <input
+              type="checkbox"
+              id="sprinkles"
+              name="toppings"
+              value="Sprinkles"
+            />
             <label for="sprinkles">Sprinkles</label>
             <input type="checkbox" id="nuts" name="toppings" value="Nuts" />
             <label for="nuts">Nuts</label>
             <input type="checkbox" id="cherry" name="toppings" value="Cherry" />
             <label for="cherry">Cherry</label>
-            <input type="checkbox" id="whippedcream" name="toppings" value="Whipped Cream" />
+            <input
+              type="checkbox"
+              id="whippedcream"
+              name="toppings"
+              value="Whipped Cream"
+            />
             <label for="whippedcream">Whipped Cream</label>
-          </div> 
+          </div>
 
           <label for="comments">Additional comments:</label>
           <textarea id="comments" name="comments" rows="3"></textarea>
         </fieldset>
 
-
         <button type="submit">Submit Order</button>
       </form>
-      
+
       <!-- Ice Cream Image -->
-      <img src="images/anime-icecream.jpg" alt="Ice-Cream">
+      <img src="images/anime-icecream.jpg" alt="Ice-Cream" />
     </div>
   </body>
 </html>
