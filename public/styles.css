@@ -27,7 +27,7 @@ form {
   padding: 20px 30px;
   max-width: 400px;
   width: 100%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Form title */
@@ -39,7 +39,7 @@ h2 {
 
 /* Labels */
 label {
-  display: block;       /* Stack above input */
+  display: block; /* Stack above input */
   margin: 10px 0 5px;
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ legend {
   display: flex;
   gap: 15px;
   margin: 5px 0;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .options label {
@@ -103,6 +103,11 @@ button {
 
 button:hover {
   background-color: darkgreen;
+}
+
+.error {
+  color: darkred;
+  display: none;
 }
 
 /* Image next to form */

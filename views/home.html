@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Favicon -->
     <link rel="icon" href="images/smiley-icecream.jpg" />
     <title>Ice Cream Order Form</title>
+    <script src="js/ice-cream.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <form>
+      <form id="ice-cream-form" action="#" method="get">
         <h2>Ice Cream Order Form</h2>
 
         <!-- Personal Information -->
         <fieldset>
           <legend>Personal Information</legend>
 
+          <span id="err-name" class="error">Name cannot be empty</span>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" />
 
+          <span id="err-email" class="error">email cannot be empty!</span>
           <label for="email">Email:</label>
           <input type="text" id="email" name="email" />
         </fieldset>
@@ -29,11 +32,15 @@
           <legend>Order Details</legend>
           <label for="flavor">Choose your flavor:</label>
           <select id="flavor" name="flavor">
+            <option value="none" selected disabled>
+              -- Please choose a flavor --
+            </option>
             <option>Vanilla</option>
             <option>Chocolate</option>
             <option>Strawberry</option>
             <option>Mint</option>
           </select>
+          <span id="err-flavor" class="error">Please choose a flavor</span>
 
           <!-- Choose Your Cone -->
           <label>Choose your cone:</label>
@@ -44,6 +51,7 @@
             <label for="sugar">Sugar Cone</label>
             <input type="radio" id="cup" name="cone" value="Cup" />
             <label for="cup">Cup</label>
+            <span id="err-method" class="error">Please choose a cone </span>
           </div>
 
           <!-- Toppings -->
